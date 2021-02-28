@@ -1,0 +1,17 @@
+cookies:
+  frame:
+    by: TAG_NAME
+    value: iframe
+
+  accept_btn:
+    by: ID
+    value: introAgreeButton
+
+search_map_page:
+  search_box:
+    by: ID
+    value: searchboxinput
+  search_suggetion_list:
+    by: ID
+    value: suggestions-grid
+

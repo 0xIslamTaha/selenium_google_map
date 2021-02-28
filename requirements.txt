@@ -1,0 +1,6 @@
+nose
+nose-testconfig
+nose_parameterized
+selenium
+loguru
+pyyaml

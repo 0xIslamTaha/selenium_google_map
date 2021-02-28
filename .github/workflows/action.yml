@@ -1,0 +1,19 @@
+name: Execute Test Cases
+
+on: push
+
+jobs:
+  Excute_test_cases:
+    runs-on: ubuntu-20.04
+    strategy:
+      fail-fast: false
+    steps:
+      - uses: actions/checkout@master
+
+      - name: pull docker image
+        run:  docker pull 0xislamtaha/seleniumchromenose:83
+
+      - name: excute test cases
+        run: timeout 20m docker container run -t -v /dev/shm:/dev/shm -v $(pwd):/google-map -e "PYTHONPATH='$PYTHONPATH:/google-map" -w /google-map 0xislamtaha/seleniumchromenose:83 bash -c "nosetests -vs --nologcapture --tc-file=config.ini --tc=browser.headless:True tests"
+
+
