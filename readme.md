@@ -1,5 +1,5 @@
 # 🔥🔥 Selenium google map
-This is a test suite cover some basic features of google map search engine.
+A fully E2E page-object test suite that tests the basic functionality of the google map search engine.
 
 ## 🔑 Testing Stack:
 ![testing stack](testing_stack.png)
@@ -35,4 +35,4 @@ docker container run -t -v /dev/shm:/dev/shm -v $(pwd):/google-map -e "PYTHONPAT
 ```
 
 ## Execution results:
-[Here](https://github.com/0xIslamTaha/selenium_google_map/actions/runs/608548739) is the latest execution results based on the Github Action.
+[Here](https://github.com/0xIslamTaha/selenium_google_map/actions) is the latest execution results based on the Github Action.
